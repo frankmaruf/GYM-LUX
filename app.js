@@ -10,19 +10,3 @@ const mobileMenu = () => {
   body.classList.toggle("active");
 };
 menu.addEventListener("click", mobileMenu);
-
-// Animation
-gsap.registerPlugin(ScrollTrigger);
-gsap.from(".animate-hero", {
-  duration: 0.6,
-  opacity: 0,
-  y: -150,
-  stagger: 0.3,
-});
-gsap.from(".animate-services", {
-  scrollTrigger: ".animate-services",
-  duration: 0.6,
-  opacity: 0,
-  y: -150,
-  stagger: 0.3,
-});
